@@ -1,3 +1,13 @@
+<?php
+    $name = $_POST["name"];
+    $text = $_POST["text"];
+
+
+    // echo $name;
+    // echo $text;
+
+?>
+
 <!DOCTYPE html>
 <html lang="it">
     <head>
@@ -33,16 +43,16 @@
                     <fieldset>
                         <legend>Inserisci una nota</legend>
                     </fieldset>
-                    <form>
+                    <form method="post">
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" autocomplete="off">
+                                <input name="name" type="text" class="form-control" autocomplete="off">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12">
-                                <textarea class="form-control" rows="6"></textarea>
+                                <textarea name="text" class="form-control" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
