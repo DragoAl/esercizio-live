@@ -1,12 +1,20 @@
 
 
 <?php
-    $name = $_POST["name"];
-    $text = $_POST["text"];
+    if(isset($_POST['name']) && isset($_POST['text'])) {
 
+        $name = $_POST["name"];
+        $text = $_POST["text"];
+        $myfile = fopen("note.txt", "a");
+        
 
-    echo $name;
-    echo $text;
+        fwrite($myfile, $name);
+        
+        fwrite($myfile, $text);
+        fclose($myfile);
+        echo $name;
+        echo $text;
+    }
 
 ?>
 
