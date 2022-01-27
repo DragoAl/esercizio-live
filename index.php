@@ -5,8 +5,8 @@
     $text = $_POST["text"];
 
 
-    // echo $name;
-    // echo $text;
+    echo $name;
+    echo $text;
 
 ?>
 
