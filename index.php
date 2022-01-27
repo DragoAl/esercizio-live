@@ -47,6 +47,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
+                                <span>ciao</span>
                                 <button type="submit" class="btn btn-primary w-100">Invia</button>
                             </div>
                         </div>
